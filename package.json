@@ -1,0 +1,29 @@
+{
+  "name": "uuon-world",
+  "version": "1.0.0",
+  "description": "UUON Universe Control Center - Reality Creator Platform",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "db:push": "turbo run db:push",
+    "clean": "turbo clean && rm -rf node_modules"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.3",
+    "typescript": "5.6.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
